@@ -1,12 +1,10 @@
 // This is created by priyanka
-function add(a, b){
-    return a + b;
+
+function greeting(name){
+    console.log("welcome",name)
 }
 
-function sub(a, b){
-    return a - b;
-}
-
-function mul(a, b){
-    return a * b;
-}
+greeting("Sony")
+greeting("Tony")
+greeting("Mony")
+greeting("Kony")
