@@ -21,4 +21,16 @@ const cartSchema = new Schema({
 
 const Cart = mongoose.model('Cart', cartSchema)
 
-module.exports = Cart
+function add(a, b) {
+    return a+b
+}
+
+function greeting(name){
+    console.log("welcome",name)
+}
+
+greeting("Sony")
+greeting("Tony")
+greeting("Mony")
+greeting("Kony")
+
