@@ -1,0 +1,9 @@
+hello-dct-weekend-june-2019
+
+git init
+
+.gitignore
+
+git status
+git add index.html
+git add .
