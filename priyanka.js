@@ -1,17 +1,24 @@
 // This is created by priyanka
 
-def hello():
-  print("Hello World") 
-  return("hello")
+const mongoose = require('mongoose')
 
+const Schema = mongoose.Schema
 
-# Define `plus()`
-def plus(a,b):
-  sum = a + b
-  return (sum, a)
+const cartSchema = new Schema({
+    userId: {
+        type: Schema.Types.ObjectId,
+        ref: 'user'
+    },
+    productId: {
+        type: Schema.Types.ObjectId,
+        ref: 'product'
+    },
+    quantity: {
+        type: Number,
+        required: true
+    }
+})
 
-# Call `plus()` and unpack variables 
-sum, a = plus(3,4)
+const Cart = mongoose.model('Cart', cartSchema)
 
-# Print `sum()`
-print(sum)
+module.exports = Cart
