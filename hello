@@ -7,3 +7,9 @@ git init
 git status
 git add index.html
 git add .
+git commit -m "Initial Commit"
+"Fix: Fixed the bug at the createUser() function"
+"Feature: Added authentication and authorisation"
+
+git log
+git 
