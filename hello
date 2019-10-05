@@ -12,4 +12,6 @@ git commit -m "Initial Commit"
 "Feature: Added authentication and authorisation"
 
 git log
-git 
+git diff
+
+git checkout e61297070dcab7d19b6c881c4797ccf5f20b3465
